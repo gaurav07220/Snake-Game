@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link
+      rel="shortcut icon"
+      href="image/snake icon.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="parent-container">
+      <div class="container">
+        <div class="game-details">
+          <div class="setting-box">
+            
+            <div class="element-box">
+              <label for="detail-color">Header</label>
+              <input type="color" id="detail-color" />
+            </div>
+
+            <div class="element-box">
+              <label for="board-color">Board Color</label>
+              <input type="color" id="board-color" />
+            </div>
+
+            <div class="element-box">
+              <label for="snake-color">Snake Color</label>
+              <input type="color" id="snake-color" />
+            </div>
+
+            <div class="element-box">
+              <label for="food-color">Food Color</label>
+              <input type="color" id="food-color" />
+            </div>
+
+            <div class="element-box">
+              <select name="" id="speed">
+                <option value="125">Snake Speed</option>
+                <option value="140">Easy</option>
+                <option value="125">Medium</option>
+                <option value="50">High Speed</option>
+              </select>
+            </div>
+
+            <div class="element-box">
+              <button id="set-btn">Set Changes</button>
+            </div>
+          </div>
+          <i class="fa fa-gear setting-btn"> </i>
+          <span class="score">Score : 0</span>
+          <span class="high-score">High Score : 0</span>
+        </div>
+        <div class="play-board">
+          
+        </div>
+      </div>
+
+      <div class="control-new">
+        <div><i data-key="ArrowUp" class="fa-solid fa-arrow-up"></i></div>
+        <div class="left-right">
+          <i data-key="ArrowLeft" class="fa-solid fa-arrow-left"></i>
+          <i data-key="ArrowRight" class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div><i data-key="ArrowDown" class="fa-solid fa-arrow-down"></i></div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/b7fb35c2b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
